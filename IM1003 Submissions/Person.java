@@ -1,5 +1,3 @@
-
-
 public class Person {
 	private String name,address;
 	
@@ -20,6 +18,7 @@ public class Person {
 		this.address = address;
 	}
 	
+	@Override
 	public String toString() {
 		return String.format("Person[name=%s,address=%s]",this.name,this.address);
 	}
