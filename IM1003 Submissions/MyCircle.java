@@ -5,7 +5,6 @@ public class MyCircle {
 	private int radius = 1;
 	
 	public MyCircle() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public MyCircle(int x, int y, int radius) {
@@ -60,7 +59,6 @@ public class MyCircle {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("MyCircle[radius=%d,center=%s]", radius,center);
 	}
 	

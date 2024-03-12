@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class FactorialLong {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int number;
 		long result = 1;
 		Scanner in = new Scanner(System.in);

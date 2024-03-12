@@ -28,7 +28,6 @@ public class Customer {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("%s(%d)(%d%%)", name, id, discount);
 	}
 }

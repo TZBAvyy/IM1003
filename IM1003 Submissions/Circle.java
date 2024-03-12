@@ -1,15 +1,20 @@
-public class Circle {
+public class Circle extends Shape{
 	
-	private double radius;
+	private double radius = 1.0;
 	
 	public Circle() {
-		this.radius = 1.0;
+		super();
 	}
 	
 	public Circle(double radius) {
+		super();
 		this.radius = radius;
 	}
 	
+	public Circle(double radius,String color,boolean filled) {
+		super(color,filled);
+	}
+
 	public double getRadius() {
 		return this.radius;
 	}
@@ -22,11 +27,12 @@ public class Circle {
 		return this.radius*this.radius*Math.PI;
 	}
 	
-	public double getCircumference() {
+	public double getPerimeter() {
 		return this.radius*2*Math.PI;
 	}
 	
+	@Override
 	public String toString() {
-		return "Circle[radius="+this.radius+"]";
+		return String.format("Circle[%s,radius=%s]", super.toString(),radius);
 	}
 }

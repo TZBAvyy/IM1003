@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class SumAverage {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// Declare variables
 	      int lowerbound, upperbound, sum = 0;
 	      double average;

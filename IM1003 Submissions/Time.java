@@ -41,7 +41,6 @@ public class Time {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("%02d:%02d:%02d", hour, minute, second);
 	}
 	

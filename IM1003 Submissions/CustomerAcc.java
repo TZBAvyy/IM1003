@@ -25,7 +25,6 @@ public class CustomerAcc {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("%s(%d)", name, id);
 	}
 }

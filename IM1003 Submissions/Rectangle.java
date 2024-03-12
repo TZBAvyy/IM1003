@@ -1,31 +1,37 @@
 
-public class Rectangle {
+public class Rectangle extends Shape{
 	
-	private float length,width;
+	private double length = 1.0, width= 1.0;
 	
 	public Rectangle() {
-		this.length = 1.0f;
-		this.width = 1.0f;
+		super();
 	}
 	
-	public Rectangle(float length, float width) {
+	public Rectangle(double length, double width) {
+		super();
+		this.length = length;
+		this.width = width;
+	}
+
+	public Rectangle(double width,double length, String color, boolean filled) {
+		super(color,filled);
 		this.length = length;
 		this.width = width;
 	}
 	
-	public float getLength() {
+	public double getLength() {
 		return this.length;
 	}
 	
-	public float getWidth() {
+	public double getWidth() {
 		return this.width;
 	}
 	
-	public void setLength(float length) {
+	public void setLength(double length) {
 		this.length = length;
 	}
 	
-	public void setWidth(float width) {
+	public void setWidth(double width) {
 		this.width = width;
 	}
 	
@@ -37,7 +43,8 @@ public class Rectangle {
 		return this.length*2+this.width*2;
 	}
 	
+	@Override
 	public String toString() {
-		return "Rectangle[length="+this.length+",width="+this.width+"]";
+		return String.format("Rectangle[%s,width=%s,length=%s]", super.toString(),width,length);
 	}
 }

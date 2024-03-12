@@ -49,7 +49,6 @@ public class Invoice {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("Invoice[id=%d,customer=%s,amount=%s]", id, customer, amount);
 	}
 }

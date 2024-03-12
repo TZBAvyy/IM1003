@@ -67,7 +67,6 @@ public class Ball {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("Ball[(%.1f,%.1f),speed=(%.1f,%.1f)]",x,y,xDelta,yDelta);
 	}
 }

@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class SwapIntegers {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int number1,number2,temp;
 		Scanner in = new Scanner(System.in);
 		

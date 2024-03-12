@@ -17,7 +17,6 @@ public class MyTriangle {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("MyTriangle[v1=%s,v2=%s,v3=%s]", v1, v2, v3);
 	}
 	
