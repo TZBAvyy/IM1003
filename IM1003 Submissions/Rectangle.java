@@ -1,13 +1,13 @@
 
 public class Rectangle extends Shape{
 	
-	private double length = 1.0, width= 1.0;
+	protected double length = 1.0, width= 1.0;
 	
 	public Rectangle() {
 		super();
 	}
 	
-	public Rectangle(double length, double width) {
+	public Rectangle(double width, double length) {
 		super();
 		this.length = length;
 		this.width = width;
@@ -35,11 +35,13 @@ public class Rectangle extends Shape{
 		this.width = width;
 	}
 	
-	public double getArea() {
+	@Override
+	double getArea() {
 		return this.length*this.width;
 	}
 	
-	public double getPerimeter() {
+	@Override
+	double getPerimeter() {
 		return this.length*2+this.width*2;
 	}
 	

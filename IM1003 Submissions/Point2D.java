@@ -37,7 +37,7 @@ public class Point2D {
 
     @Override
     public String toString() {
-        return String.format("%s,%s",x,y);
+        return String.format("(%s,%s)",x,y);
     }
     
 }

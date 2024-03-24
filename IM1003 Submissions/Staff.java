@@ -28,6 +28,6 @@ public class Staff extends Person{
 	
 	@Override
 	public String toString() {
-		return String.format("Staff[%s,school=%s,pay=%g]",super.toString(),this.school,this.pay);
+		return String.format("Staff[%s,school=%s,pay=%s]",super.toString(),this.school,this.pay);
 	}
 }

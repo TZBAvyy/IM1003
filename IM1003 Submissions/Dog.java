@@ -1,18 +1,14 @@
-public class Dog extends Mammal {
+public class Dog extends Animal {
     public Dog(String name) {
         super(name);
     }
 
-    public void greets() {
+    @Override
+    void greets() {
         System.out.println("Woof");
     }
 
-    public void greets(Dog another) {
+    void greets(Dog another) {
         System.out.println("Woooof");
-    }
-
-    @Override
-    public String toString() {
-        return String.format("Dog[%s]", super.toString());
     }
 }

@@ -1,6 +1,6 @@
-public class Shape {
-    private String color = "red";
-    private boolean filled = true;
+abstract class Shape {
+    protected String color = "red";
+    protected boolean filled = true;
 
     public Shape() {
     }
@@ -25,6 +25,10 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
+    abstract double getArea();
+
+    abstract double getPerimeter();
 
     @Override
     public String toString() {

@@ -17,19 +17,19 @@ public class MovablePoint extends Point{
         this.ySpeed = ySpeed;
     }
 
-    public float getxSpeed() {
+    public float getXSpeed() {
         return xSpeed;
     }
 
-    public float getySpeed() {
+    public float getYSpeed() {
         return ySpeed;
     }
 
-    public void setxSpeed(float xSpeed) {
+    public void setXSpeed(float xSpeed) {
         this.xSpeed = xSpeed;
     }
 
-    public void setySpeed(float ySpeed) {
+    public void setYSpeed(float ySpeed) {
         this.ySpeed = ySpeed;
     }
 
@@ -45,7 +45,7 @@ public class MovablePoint extends Point{
 
     @Override
     public String toString() {
-        return String.format("(%s,%s),speed=(%s,%s)", getX(),getY(),getxSpeed(),getySpeed());
+        return String.format("(%s,%s),speed=(%s,%s)", getX(),getY(),getXSpeed(),getYSpeed());
     }
 
     public MovablePoint move() {

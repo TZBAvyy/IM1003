@@ -39,6 +39,6 @@ public class Student extends Person{
 	
 	@Override
 	public String toString() {
-		return String.format("Student[%s,program=%s,year=%d,fee=%g",super.toString(),this.program, this.year, this.fee);
+		return String.format("Student[%s,program=%s,year=%d,fee=%s]",super.toString(),this.program, this.year, this.fee);
 	}
 }
